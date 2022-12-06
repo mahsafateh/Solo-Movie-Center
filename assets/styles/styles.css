@@ -315,6 +315,7 @@ img {
 .gallery-images {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -8px;
 }
 
 .gallery-img {
