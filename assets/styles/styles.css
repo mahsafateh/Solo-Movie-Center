@@ -319,26 +319,29 @@ img {
 }
 
 .gallery-img {
-  height:250px;
+  height: 250px;
   flex-grow: 1;
   margin: 5px 8px;
 }
 
-.gallery-img img{
-  height:100%;
+.gallery-img img {
+  height: 100%;
   object-fit: cover;
 }
 
-.gallery-img:nth-child(4n+1){
+.gallery-img:nth-child(4n+1) {
   flex-basis: 250px;
 }
-.gallery-img:nth-child(4n+2){
+
+.gallery-img:nth-child(4n+2) {
   flex-basis: 325px;
 }
-.gallery-img:nth-child(4n+3){
+
+.gallery-img:nth-child(4n+3) {
   flex-basis: 180px;
 }
-.gallery-img:nth-child(4n+4){
+
+.gallery-img:nth-child(4n+4) {
   flex-basis: 380px;
 }
 
