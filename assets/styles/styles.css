@@ -15,10 +15,18 @@ body {
   margin: 0;
 }
 
-header,
-footer {
+header {
   background-color: black;
   height: 100px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 .sidebar-right {
@@ -76,6 +84,50 @@ p {
   margin-top: -0.8;
   font-style: italic;
 }
+
+.main-menu {
+  color: black;
+  background-color: #f6c85d;
+}
+
+.main-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.main-menu ul a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 0.6em;
+  display: block;
+  transition: all 0.7s ease;
+}
+
+.main-menu ul a:hover {
+  color: #f6c85d;
+  background-color: black;
+}
+
+@media screen and (min-width: 810px) {
+
+  .main-menu ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .main-menu ul li {
+    flex-grow: 1;
+    flex-basis: auto;
+    flex-shrink: 0;
+  }
+}
+
 
 /* End Of Header */
 
@@ -346,3 +398,47 @@ img {
 }
 
 /* End Of Gallery Section */
+
+/* Sidebar */
+
+.sidebar-right {
+  padding: 2em;
+  color: black;
+}
+
+.widget {
+  background-color: white;
+  margin-bottom: 2em;
+}
+
+.widget-content {
+  padding: 0.5em 2em;
+}
+
+.sidebar-right ul {
+  list-style: none;
+  padding-left: 1em;
+}
+
+.sidebar-right ul a {
+  display: block;
+  padding-bottom: 0.4em;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media screen and (min-width:810px) and (max-width: 1120px) {
+
+  .sidebar-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .widget {
+    flex-basis: 48.8%;
+  }
+}
+
+/* End Of The Sidebar */
